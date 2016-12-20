@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*BASE*/
+body {
+  background: url(../images/top.jpg) center center / cover no-repeat fixed;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(../images/top.jpg);
+  }
+}
+/*header*/
+h1{
+	position: relative;
+	top:0px;
+	left:30px;
+}
+.nav{
+
+}
