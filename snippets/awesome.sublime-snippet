@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
+<a href="http://fontawesome.io/icons/" target="blank"><i class="fa fa-link"></i>アイコン一覧</a>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>awesome</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

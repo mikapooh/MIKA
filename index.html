@@ -1,70 +1,141 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>mikapooh</title>
-    <!-- bootstrap -->
+    <meta charset="utf-8">
+    <title>MIKA</title>
+    <meta name="title" content="" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <!-- Bootstrap 1 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
+    <!-- Bootstrap2 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!--jquery-->
-    <script type="text/javascript">
-    jQuery(function($) {
-
-        var nav = $('#fixedBox'),
-            offset = nav.offset();
-
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > offset.top) {
-                nav.addClass('fixed');
-            } else {
-                nav.removeClass('fixed');
-            }
+    <!-- custom fonts -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- CSS -->
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <script>
+    $(document).ready(function() {
+        $(".main").onepage_scroll({
+            sectionContainer: "section",
+            loop: true,
+            responsiveFallback: false
         });
-
-    });
-    $(".main-one").onepage_scroll({
-        sectionContainer: "section", // セクションとなる要素（divなどに変更も可）
-        easing: "ease", // イージング、他にも多数のエフェクトを用意 "ease", "linear", "ease-in", "ease-out", "ease-in-out", "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-        animationTime: 1000, // アニメーションの時間
-        pagination: true, // ページネーションの有無
-        updateURL: false // ページをスクロールした際にURLも変更するかの有無
     });
     </script>
-    <link href="js/bootstrap.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.js"></script>
-    <script type="text/javascript" src="jquery.onepage-scroll.min.js"></script>
-    <link href='js/onepage-scroll.css' rel='stylesheet' type='text/css'>
-    <!-- custom fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/star_wings.png">
-    <!-- custom cSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="header">
-        <nav class="navbar navbar-fixed-top">
-            <h1 id="logo"><a href="index.html"><img src="images/favicon.png" alt="mikapooh"></a></h1>
-            <div id="fixedBox" class="nav">
-                <ul class="nav navbar-nav text-center">
-                    <li id="mikapooh"><a href="#mikapooh">category</a></li>
-                    <li id="design"><a href="#design">design</a></li>
-                    <li id="contact"><a href="#contact">contact</a></li>
-                </ul>
-            </div>
+    <header>
+        <nav class="m-nav navbar navbar-invers navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi" >
+                    <a class="navbar-brand" href="#top"><img src="" alt="mika"></a>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="gnavi">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#mika">みか</a></li>
+                        <li><a href="#genga">げんが</a></li>
+                        <li><a href="#omise">おみせ</a></li>
+                        <li><a href="#tegami">てがみ</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
         </nav>
+    </header>
+    <div class="wrapper">
+        <div class="main">
+            <section class="top" id="top">
+                <div class="page_container">
+                    <div class="logo">
+                    <img src="img/mikapooh.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="mika" id="mika">
+                <div class="page_container">
+                    <div class="title">
+                        <div class="type-mask">
+                            <h2>みか</h2>
+                        </div>
+                    </div>
+                    <div class="img">
+                    </div>
+                    <div >
+                        <p class="bun">みか<br><br><br></p>
+                    </div>
+                </div>
+            </section>
+            <section class="genga" id="genga">
+                <div class="page_container">
+                    <div class="title">
+                        <div class="type-mask">
+                            <h2>げんが</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="box-img" src="img/back2.png" alt="">
+                        <div>
+                            <h3 class="bun">ここだけ</h3>
+                            <p>かきたてほやほや<br>カコからイマまでのもの<br>インスタグラムにのみのってます</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="omise" id="omise">
+                <div class="page_container">
+                    <div class="title">
+                        <div class="type-mask">
+                            <h2>おみせ</h2></div>
+                    </div>
+                    <div class="img">
+                        <img src="img/back3.png" alt="mika">
+                    </div>
+                    <div class="box1">
+                        <p　class="bun">ポスター<br>ポストカード<br>ネットショップ<br></p>
+                    </div>
+                </div>
+            </section>
+            <section class="tegami" id="tegami">
+                <div class="page_container">
+                    <div class="title">
+                        <div class="type-mask">
+                            <h2>てがみ</h2></div>
+                    </div>
+                    <div class="img">
+                        <img src="img/back4.png" alt="mika">
+                    </div>
+                    <div class="box1">
+                        <p　class="bun">みか<br><br><br></p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-    <div class="main-one">
-        <section></section>
-        <section></section>
-        <section></section>
-    </div>
+    <footer>
+        <nav class="f-nav navbar navbar-invers navbar-fixed-bottom">
+            <ul class="nav navbar-nav">
+                <li><a href="#mika">みか</a></li>
+                <li><a href="#genga">げんが</a></li>
+                <li><a href="#omise">おみせ</a></li>
+                <li><a href="#tegami">てがみ</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>

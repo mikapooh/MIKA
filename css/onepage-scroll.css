@@ -84,12 +84,9 @@ body, .onepage-wrapper, html {
   -ms-transform: none !important;
   min-height: 100%;
 }
-
-
 .disabled-onepage-scroll .onepage-pagination {
   display: none;
 }
-
 body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: inherit;
 }

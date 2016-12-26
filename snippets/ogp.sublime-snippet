@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<meta property="og:title" content="${1:ページタイトル}" />
+<meta property="og:type" content="${2:ジャンル}" />
+<meta property="og:url" content="${3:ページのURL}" />
+<meta property="og:image" content="${4:サムネイル画像URL}" />
+<meta property="og:site_name" content="${5:サイト名}" />
+<meta property="og:description" content="${6:ページ詳細説明}" />
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ogp</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

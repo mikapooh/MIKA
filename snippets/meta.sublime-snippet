@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<meta name="description" content="${1:}">
+<meta name="keywords" content="${2:}">
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>met</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
